@@ -4,6 +4,7 @@ c=cnvs.getContext('2d');
 wd = cnvs.width;
 ht = cnvs.height;
 
+colors = ["red","blue","black","yellow","green"];
 bndx = wd-10;
 bndy = ht-10;
 
@@ -36,6 +37,7 @@ function build(){
   cnt+=1;
   if(cnt>mx_cnt) return;
   ch = rint(0,3);
+  c.fillStyle = colors[ch];
   x1 = Math.floor((x1+pnts[ch][0])/2);
   y1 = Math.floor((y1+pnts[ch][1])/2);
   c.fillRect(x1,y1,pnt_sz,pnt_sz);
