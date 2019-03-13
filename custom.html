@@ -10,18 +10,22 @@
     <div class="" id="controls">
       <button type="button" name="button" onclick="start()">start</button>
       <button type="button" name="button2" onclick="stop()">stop</button>
+      <button type="button" name="button3" onclick="reset()">Reset</button>
       Time gap :  <input type="number" id="interval" value="0" min=0>
       Max Iterations :  <input type="number" id="max_iter" value="500" min=0>
+      Pixel Size :  <input type="number" id="pixel_size" value="3" min=0>
     </div>
     <div>Iterations :  <span id="iterations">0</span></div>
+    <br>
+    <span>Click on reset, Put n points on the canvas, the last point will be used as
+       the initial random point. n-1 will be used as fixed shape corners</span>
 
 <br>
-<a href="custom.html">Go to more custom settings</a>
-
+<a href="index.html">Go Back to Triangle</a>
   </body>
 
 
 
-<script src="main.js" charset="utf-8"></script>
+<script src="main2.js" charset="utf-8"></script>
 
 </html>
